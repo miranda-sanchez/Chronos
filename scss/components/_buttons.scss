@@ -1,0 +1,10 @@
+@use "../abstracts/colors" as c;
+
+button {
+    padding: 0.5rem 2rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: c.$action-color;
+    font-size: 1rem;
+    cursor: pointer;
+}

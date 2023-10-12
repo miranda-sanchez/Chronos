@@ -154,13 +154,13 @@ h1 {
   background-size: cover;
 }
 #hero #images div:first-child {
-  background-image: url(/img/carrusel1.jpeg);
+  background-image: url(../../img/carrusel1.jpeg);
 }
 #hero #images div:nth-child(2) {
-  background-image: url(/img/carrusel2.jpeg);
+  background-image: url(../../img/carrusel2.jpeg);
 }
 #hero #images div:nth-child(3) {
-  background-image: url(/img/carrusel4.jpeg);
+  background-image: url(../../img/carrusel4.jpeg);
 }
 
 /*# sourceMappingURL=style.css.map */

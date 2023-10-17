@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -22,12 +21,13 @@ a {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Supreme", sans-serif;
 }
 
 p {
   padding: 1rem 0 0.5rem 0;
   text-align: center;
+  text-transform: lowercase;
 }
 
 button {
@@ -36,6 +36,7 @@ button {
   border-radius: 1rem;
   background-color: #b3b3e6;
   font-size: 1rem;
+  text-transform: lowercase;
   cursor: pointer;
 }
 
@@ -54,15 +55,17 @@ nav ul {
   align-items: center;
 }
 nav ul li {
+  text-transform: lowercase;
   padding: 0.5rem 2rem;
 }
 
 h1 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Clash Display", sans-serif;
   font-size: 3rem;
   text-align: center;
   letter-spacing: 0.3rem;
   margin: 1rem 0 0.5rem 0;
+  text-transform: uppercase;
 }
 
 #hero {
@@ -83,7 +86,9 @@ h1 {
   position: relative;
 }
 #hero article:first-child h1 {
-  font-size: 4rem;
+  font-size: 3rem;
+  white-space: nowrap;
+  transform: rotate(-5deg);
 }
 #hero article:first-child h1, #hero article:first-child p {
   text-align: left;
@@ -93,8 +98,9 @@ h1 {
 #hero article:first-child #highlight {
   position: absolute;
   width: 250px;
+  height: 100px;
   z-index: -2;
-  top: 30%;
+  top: 20%;
   right: 5%;
 }
 #hero article:first-child div {
@@ -108,11 +114,12 @@ h1 {
 #hero article:first-child div div span {
   float: left;
   font-size: 2rem;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Clash Display", sans-serif;
   background-color: rgba(0, 0, 0, 0.5960784314);
   color: #fff;
   text-align: center;
-  width: 50px;
+  width: 60px;
+  height: 60px;
   padding: 0.5rem;
   border-radius: 50%;
 }
@@ -135,6 +142,7 @@ h1 {
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  border-radius: 1rem;
 }
 #hero article:nth-child(2) div:first-child {
   background-image: linear-gradient(to top, #b3b3e6, #bdbde9, #c8c8ec, #d2d2ef, #ddddf2);
@@ -161,6 +169,15 @@ h1 {
 }
 #hero #images div:nth-child(3) {
   background-image: url(../../img/carrusel4.jpeg);
+}
+
+@media (max-width: 992px) {
+  #hero {
+    grid-template-columns: 1fr 1fr;
+  }
+  #hero #images {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,11 +1,12 @@
 @use "../abstracts/colors" as c;
 
 button {
-    padding: 0.5rem 2rem;
+    padding: 10px 30px;
     border: 1px solid black;
-    border-radius: 1rem;
+    border-radius: 20px;
     background-color: c.$action-color;
-    font-size: 1rem;
     text-transform: lowercase;
+    font-size: 1rem;
     cursor: pointer;
+    position: relative;
 }

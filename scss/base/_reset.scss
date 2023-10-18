@@ -29,5 +29,8 @@ body {
 p {
     padding: 1rem 0 0.5rem 0;
     text-align: center;
-    text-transform: lowercase;
+}
+
+i {
+    transform: rotate(315deg);
 }

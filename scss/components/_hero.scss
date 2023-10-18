@@ -5,22 +5,20 @@
 
 #hero {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1.5fr;
     justify-content: center;
-    height: 60vh;
     grid-gap: 30px;
-    margin: 2rem;
-    
+    margin: 50px 20px 80px;
     article {
         display: grid;
         grid-gap: 10px;
         row-gap: 10px;
     }
     article:first-child {
-        grid-template-rows: 2fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
         position: relative;
         h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             white-space: nowrap;
             transform: rotate(-5deg);
         }
@@ -34,7 +32,7 @@
             width: 250px;
             height: 100px;
             z-index: -2;
-            top: 20%;
+            top: 15%;
             right: 5%;
         }
         div {
@@ -47,8 +45,7 @@
                     float: left;
                     font-size: 2rem;
                     font-family: $titles;
-                    background-color: #00000098;
-                    color: #fff;
+                    border: 1px solid #000;
                     text-align: center;
                     width: 60px;
                     height: 60px;
@@ -73,22 +70,16 @@
         grid-template-rows: 1fr 2fr;
         justify-content: space-between;
         div {
+            max-width: 400px;
             display: flex;
             flex-direction: column;
-            height: 100%;
-            text-align: center;
             justify-content: center;
-            align-items: center;
+            height: 100%;
             padding: 1rem;
-            border-radius: 1rem;
-            &:first-child {
-                background-image: linear-gradient(to top, #b3b3e6, #bdbde9, #c8c8ec, #d2d2ef, #ddddf2);
-                button {
-                    background-color: #fff;
-                }
-            }
-            &:nth-child(2) {
-                border: 2px solid c.$action-color;
+            border-radius: 20px;
+            border: 1px solid #000;
+            button {
+                width: auto;
             }
         }
   
